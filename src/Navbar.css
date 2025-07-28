@@ -1,0 +1,18 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar h1 {
+  margin: 0;
+  padding: 10px;
+}
+
+.navbar h1:hover {
+  color: gray;
+  cursor: pointer;
+}
