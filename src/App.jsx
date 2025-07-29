@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './Navbar.jsx'
 import About from './About.jsx'
 import Footer from './Footer.jsx'
+import HexagonMenu from './HexagonMenu.jsx'
 import './App.css'
 
 function App() {
@@ -9,21 +10,15 @@ function App() {
 
   return (
     <div>
-      <Navbar setActiveSection={setActiveSection} />
+      {/* <Navbar setActiveSection={setActiveSection} /> */}
 
       {activeSection === 'home' && (
-        <div>
-          <h1>Simão Martins</h1>
-          <img src="foto_perfil.jpeg" alt="profile picture" className="profile-picture"/>
-          {/* your current content */}
-        </div>
+        <HexagonMenu />
       )}
 
       {activeSection === 'about' && <About />}
 
-      {activeSection === 'contacts' && <Contacts />}
-
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -1,0 +1,59 @@
+.hexagon {
+  width: 120px;
+  height: 120px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+  display: flex;
+  align-items: center;     /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  text-align: center;
+  background-color: rgb(88, 86, 86);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+.hexagon-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-hex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* This centers it perfectly */
+  z-index: 2;
+}
+
+.surrounding-hex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: slideOut 0.5s ease-out forwards;
+}
+
+/* Now offset each hex from the center position */
+.hex-1 {
+  transform: translate(-50%, -50%) translate(0, -130px);
+}
+.hex-2 {
+  transform: translate(-50%, -50%) translate(90px, -65px);
+}
+.hex-3 {
+  transform: translate(-50%, -50%) translate(90px, 65px);
+}
+.hex-4 {
+  transform: translate(-50%, -50%) translate(0, 130px);
+}
+.hex-5 {
+  transform: translate(-50%, -50%) translate(-90px, 65px);
+}
+.hex-6 {
+  transform: translate(-50%, -50%) translate(-90px, -65px);
+}

@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -50,3 +52,4 @@ p {
   width: 20%;
   border-radius: 45%;
 }
+
