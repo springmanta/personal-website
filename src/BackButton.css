@@ -1,0 +1,14 @@
+.back-button {
+  width: 120px;
+  height: 50px;
+  clip-path: polygon(30% 0%, 70% 0%, 40% 50%, 70% 100%, 30% 100%, 0% 50%);
+  background-color: gray;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.back-button:hover {
+  background-color: rgb(171, 169, 169);
+  transition: 1s;
+}

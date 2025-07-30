@@ -7,8 +7,14 @@
   justify-content: center; /* Horizontal centering */
   text-align: center;
   background-color: rgb(88, 86, 86);
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
   font-size: small;
+}
+
+.hexagon:hover {
+  cursor:pointer;
+  transform:rotate(5)
 }
 
 .hexagon-container {
@@ -36,6 +42,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   animation: slideOut 0.5s ease-out forwards;
+  font-weight: initial;
 }
 
 /* Now offset each hex from the center position */

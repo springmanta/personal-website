@@ -1,0 +1,11 @@
+.contacts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: column;
+}
+
+.contacts-container a {
+  background-color: gray;
+  padding: 30px;
+}
