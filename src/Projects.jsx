@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import BackButton from './BackButton'
+import ProjectDetail from './ProjectDetail'
 import './Projects.css'
 
 export default function Projects({onBack}) {
@@ -13,15 +14,11 @@ export default function Projects({onBack}) {
     setActiveProject(null)
   }
 
-
   switch (activeProject) {
       case 'getyoship':
-        return <div>
+        return <div className="project-container">
           <h1 className="project-title" onClick={handleBackClick}>Get Yo Ship</h1>
-            <p>This was our first group project during Le Wagon's bootcamp, which they call the "AirBnb week", so that it serves as a preparation for the final project.</p>
-            <p>Here we are incentivized to be the highly creative as possible, so we decided to create a rental service for Star Wars Spaceships.</p>
-            <p>This was a Web Application that had user authentication and authorization and essentially allowed them to pick a ship - hence the name of the App - and then book it on a date-picker.</p>
-            <p>One of the greatest challenges was starting to work collectively, using Git and GitHub, each one creating its own branch and then proceed to merge alltogether.</p>
+          <ProjectDetail />
         </div>
       default:
         return (

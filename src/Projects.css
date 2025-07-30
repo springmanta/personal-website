@@ -35,3 +35,8 @@
 .project-title:hover {
   color: #666; /* Subtle color change to show it's clickable */
 }
+
+.ship-image {
+  width: 700px;
+  height: 350px;
+}

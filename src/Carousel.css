@@ -1,0 +1,45 @@
+.carousel-container {
+  position: relative;
+  display: inline-block; /* Keeps container size to image size */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Perfect center alignment */
+
+  /* Basic button styling */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.2); /* Custom focus for accessibility */
+}
+
+.carousel-button:active {
+  outline: none; /* Remove outline when button is being pressed */
+}
+
+.carousel-button:focus,
+.carousel-button:active,
+.carousel-button:visited {
+  outline: none;
+  text-decoration: none; /* In case it's text decoration */
+  border: none;
+}
+
+.button-left {
+  left: 10px; /* 10px from left edge */
+}
+
+.button-right {
+  right: 10px; /* 10px from right edge */
+}
+.carousel-image {
+  width: 580px;
+  height: 300px;
+}
