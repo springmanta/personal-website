@@ -1,11 +1,27 @@
 .contacts-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
-.contacts-container a {
+.contact-links {
+  padding: 50px;
+  width: 200px;
+  height: 200px;
   background-color: gray;
-  padding: 30px;
+  margin: 20px;
+  border-radius: 5px;
+  color: black;
+}
+
+.contact-links:hover {
+  background-color: rgb(167, 167, 167);
+  color: white;
+}
+
+.back-button-container {
+  margin-top: 150px; /* This pushes it to bottom */
+  padding: 20px 0;
 }

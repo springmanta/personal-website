@@ -3,7 +3,7 @@
   height: 50px;
   clip-path: polygon(30% 0%, 70% 0%, 40% 50%, 70% 100%, 30% 100%, 0% 50%);
   background-color: gray;
-  text-decoration: none;
+  text-decoration: none !important;
   border: none;
   outline: none;
 }
@@ -11,4 +11,15 @@
 .back-button:hover {
   background-color: rgb(171, 169, 169);
   transition: 1s;
+}
+
+.back-button:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+/* Or if it's an active state issue: */
+.back-button:active {
+  outline: none;
+  text-decoration: none;
 }

@@ -1,6 +1,7 @@
 import './HexagonMenu.css'
 import About from './About.jsx'
 import Contacts from './Contacts.jsx'
+import Projects from './Projects.jsx'
 import { useState } from "react";
 
 export default function HexagonMenu(){
@@ -19,6 +20,10 @@ export default function HexagonMenu(){
     setActiveSection('contacts')
   }
 
+  const handleProjectsClick = () => {
+    setActiveSection('projects')
+  }
+
   const handleBackClick = () => {
     setActiveSection(null)
   }
@@ -26,8 +31,8 @@ export default function HexagonMenu(){
   switch (activeSection) {
     case 'about':
       return <About onBack={handleBackClick}/>
-    // case 'projects':
-    //   return <Projects />
+    case 'projects':
+      return <Projects onBack={handleBackClick}/>
     // case 'skills':
     //   return <Skills />
     case 'contacts':
@@ -45,7 +50,7 @@ export default function HexagonMenu(){
     {isExpanded && (
       <>
         <div className="hexagon surrounding-hex hex-1" onClick={handleAboutClick}>About</div>
-        <div className="hexagon surrounding-hex hex-2">Projects</div>
+        <div className="hexagon surrounding-hex hex-2" onClick={handleProjectsClick}>Projects</div>
         <div className="hexagon surrounding-hex hex-3">Skills</div>
         <div className="hexagon surrounding-hex hex-4" onClick={handleContactsClick}>Contacts</div>
         <div className="hexagon surrounding-hex hex-5">Music</div>
